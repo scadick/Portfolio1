@@ -12,13 +12,11 @@
 		//$querySingle = "SELECT * FROM videos_name AND video_description WHERE movies_id = {$id}";
 		//$getMedia = mysqli_query($link, $querySingle);
 	//}
-	if{
 		//4. Returns all media
 		$mediaQuery = "SELECT video_name, video_description FROM videos";
 
 		$getMedia = mysqli_query($link, $mediaQuery);
 		//echo $getMedia;
-	}
 
 	$grpResult = "";
 

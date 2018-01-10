@@ -16,12 +16,12 @@
   //function init() {
   media = document.querySelector("#demoVid");
   toggleButton = document.querySelector("#playVideo");
-  console.log(toggleButton);
+  //console.log(toggleButton);
   //toggleB = document.querySelector("#play");
-  console.log(toggleButton);
+  //console.log(toggleButton);
   //}
  function togglePlay(evt) {
- console.log("fired from togglePlay()");
+ //console.log("fired from togglePlay()");
  if(media.paused){
   media.play();
   evt.currentTarget.innerHTML = "Pause";
@@ -31,7 +31,7 @@
    }
   }
  function toggleP(evt) {
-  console.log("fired from togglePlay()");
+  //console.log("fired from togglePlay()");
   if(demoreel.paused){
 	  demoreel.play();
 	  evt.currentTarget.innerHTML = "Pause";
@@ -44,9 +44,9 @@
  toggleButton.addEventListener("click", togglePlay, false);
  //toggleB.addEventListener("click", toggleP, false);
  
- var lightboxClose = document.querySelector('.close-lightbox'),
+ var vids = document.querySelectorAll('.media'),
       appliedClass;
- function popLightbox(currentIndex, currentObject) {
+	   function popLightbox() {
         //debugger;
         window.scrollTo(0, 0);
         document.body.style.overflow = "hidden";
@@ -60,7 +60,7 @@
         let lightboxClose = lightbox.querySelector('.close-lightbox');
         let lightboxDesc = lightbox.querySelector('p');
 
-        lightboxImg.src = "video/" + currentObject.media[currentIndex];
+        lightboxImg.src = "video/" + this.id + ".webm";
         lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
 
         lightboxClose.addEventListener('click', closeLightbox, false);	
@@ -68,12 +68,14 @@
 
       function closeLightbox() {
         //debugger;
-		console.log('.close-lightbox');
+		console.log('.media');
 		let lightbox = document.querySelector('.lightbox');
 		lightbox.style.display = "none";
 		document.body.style.overflow="visible";
 		
 		
       }
- 		
+ 		vids.forEach(function(element, index){
+			element.addEventListener("click", popLightbox, false);
+		});
 })();

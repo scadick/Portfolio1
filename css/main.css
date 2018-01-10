@@ -156,15 +156,17 @@ li {
 }
 
 .close-lightbox{
-	float: right;
 	margin-right: 18px;
 	margin-top: 12px;
 	font-size: 2em;
 	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	color: #FFF;
 }
 
 .lightbox-vid {
-	margin-top: auto;
+	margin: auto;
 	height: 600px;
 }
 

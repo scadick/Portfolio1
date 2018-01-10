@@ -62,7 +62,8 @@
 	  
   function processResult(data) {
     //debugger;
-    const { videoName} = data;
+    //const [{videoName}] = data;
+	//console.log(data[1]);
     // statement chaining lets you go lots of stuff on one line
     let contentArea = document.querySelector('#contentArea');
 	
@@ -70,8 +71,7 @@
     //debugger;
 
     //opacity change
-
-		data.video_name.forEach(function(element, index){
+		data.forEach(function(element, index){
           let vid = document.createElement('video');
 
           // add a css class
