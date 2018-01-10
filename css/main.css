@@ -1,0 +1,441 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.border {
+	max-width: 1600px;
+	margin: auto;
+}
+
+#aboutSection {
+	max-width: 1200px;
+	margin: auto;
+}
+
+header {
+	border-bottom: 3px solid #000;
+}
+/*  */
+
+h1 {
+	color: #990000;
+	text-decoration: none;
+	display: block;
+	font-style: normal;
+	margin-top: 15px;
+	text-align: center;
+}
+
+a {
+	color: #990000;
+	text-decoration: none;
+	display: block;
+	font-style: normal;
+}
+
+a:hover {
+	color: #F00;
+	background-color: #efefef;
+}
+
+#mainBody {
+	background: url(../images/regal.png);
+}
+
+label {
+	font-size: 1.25em;
+}
+
+footer {
+	border-top: 3px solid #000;
+}
+
+#mainContact {
+	overflow: hidden; /*keeps parent from collapsing*/
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 40px;
+	color: #900;
+}
+
+#mainContact h2 {
+	color: #900;
+	background-color: #304700;
+	padding: 8px 0px 8px 5px; /*trbl*/
+	margin-bottom: 40px;
+}
+
+
+#contactText {
+	color: #900;
+	font-size: 1.5em;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+
+#submit {
+	display: block;
+	width: 100px;
+	height: 30px;
+	background-color: #FFF;
+	text-align: center;
+	color: #900;
+	font-size: 1.25em;
+	border: 1px solid #900;
+	border-radius: 8px;
+	padding: 5px 10px 5px 10px; /*trbl*/
+	cursor: pointer;
+	margin-bottom: 15px;
+	margin: 0 auto;
+}
+
+#submit:hover {
+	background-color: #CCC;
+}
+
+#contactForm label {
+	color: #900;
+}
+
+li {
+	color: #990000;
+	display: block;
+	font-style: normal;
+	font-size: 1.25em;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+	
+#btt {
+	color: #900;
+	text-align: center;
+	margin-top: 15px;
+	float: center;
+	margin-bottom: 15px;
+}
+
+#controls, #demoreel {  
+	height:30px; 
+	background-color: #FFF;
+ 	color: #900; 
+	font-family: Helvetica, Verdana, sans-serif;  
+	font-size: 1.25em;
+ 	text-transform: uppercase;
+	text-decoration: bold; 
+}
+
+#controls div { 
+	float:left; 
+	height:30px; 
+	line-height:30px;
+}
+
+.player-button {
+	margin-left:10px; 
+	text-align:center; 
+	cursor:pointer;
+}
+
+.lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: white;
+	z-index: 500;
+}
+
+.close-lightbox{
+	float: right;
+	margin-right: 18px;
+	margin-top: 12px;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.lightbox-vid {
+	margin-top: auto;
+	height: 600px;
+}
+
+.img-desc {
+	margin-left: 30%;
+}
+
+@media screen and (max-width: 40.25em) {
+	#mainLogo {
+	margin-top: 5px;
+	height: 150px;
+	} 
+	
+	#headerImg {
+	height: 150px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	}
+	
+	.dropButton {
+		background-color: #900;
+		color: white;
+		padding: 15px;
+		font-size: 1em;
+		border: none;
+		cursor: pointer;
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+	
+	.dropdown {
+		margin: auto;
+	}
+	
+	#mainNav {
+		display: none;
+	}
+	
+	.dropdown:hover #mainNav, #mainNav a, #mainNav li {
+    display: block;
+	text-decoration: none;
+	}
+	
+	.dropdown:hover .dropButton {
+		background-color: #666;
+	}
+	
+	#demoReel {
+		margin-top: 15px;
+		padding: 15px;
+		height: 150px;
+		width: 275px;
+	}
+	
+	.media {
+	padding: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	height: 150px;
+	width: 255px;
+	text-align: center;
+	margin: auto;
+	}
+	
+	.media:hover {
+		background-color: #666;
+	}
+	
+	#footerImg {
+		height: 150px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		float: center;
+	}
+	
+	#footerNav {
+		display: none;
+	}
+	
+	#socialMediaCon {
+		float: center;
+		height: 45px;
+		margin-top: 25px;
+	}
+	
+	#logoimg {
+	height: 150px;
+	}
+}
+
+@media screen and (min-width: 40.125em) {
+	#mainLogo {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 500px;
+	} 
+	
+	.dropButton {
+		display: none;
+	}
+	
+	#headerImg {
+	height: 150px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 10px;
+	}
+	
+	#mainNav {
+	color: #990000;
+	text-decoration: none;
+	font-style: normal;	
+	margin-right: 25px;
+	margin-top: 25px;
+	
+	}
+	
+	#mainNav a {
+		font-size: 2.25em;
+	}
+	
+	#mainNav a:hover {
+		background-color: #efefef;
+		color: #F00;
+	}
+	
+	#mainNav li {
+		float: left;
+		text-decoration: none;
+		margin-left: 25px;
+		width: 20%;
+	}
+	
+	}
+	
+	#demoReel {
+		margin-top: 15px;
+		padding: 15px;
+		max-width: 1000px;
+		height: 500px;
+	}
+	
+	p {
+		color: #990000;
+		padding: 10px;
+		margin: 0 auto;
+		font-size: 1.25em;
+	}
+	
+	#mainBody {
+		clear: both;
+		margin-top: 15px;
+	}
+	
+	.media {
+		padding: 10px;
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 40px;
+		height: 300px;
+		width: 510px;
+		text-align: center;
+		margin: auto;
+	}
+	
+	.media:hover {
+		background-color: #666;
+	}
+	
+	footer {
+		clear: both;
+		margin-top: 15px;
+	}
+	
+	#footerImg {
+		height: 150px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 10px;
+		float: left;
+	}
+	
+	footer h1 a {
+		font-size: 1em;
+		display: inline-block;
+	}
+	
+	.footer p {
+		color: #000;
+		font-size: 12px;
+		text-align: right;
+		margin-top: 15px;
+		margin-right: 15px;
+	}
+	
+	#footerNav {
+		float: left;
+		list-style: none;
+		text-align: center;
+		margin-top: 15px;
+	}
+	
+	#footerNav li {
+		display: inline;
+		margin-left: 15px;
+		color: #990000;
+	}
+	
+	#footerNav li a {
+		color: #990000;
+		margin-top: 15px;
+		margin-right: 20px;
+		display: inline;
+		margin-left: 50px;
+	}
+	
+	
+	#footerNav li a:hover {
+		background-color: #efefef;
+		color: #F00;
+	}
+	
+	#copyright {
+		margin-top: 15px;
+		margin-right: 25px;
+		clear: both;
+		float: right;
+		color: #000;
+		font-size: 12px;
+	}
+	
+	.selected {
+		color: #F00;
+	}
+	
+	#socialMediaCon {
+		float: right;
+		height: 45px;
+		margin-top: 25px;
+		margin-right: 15px;
+	}
+	
+	#iconNav {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-right: 15px;
+	}
+	
+	#iconNav li {
+		float: left;
+		margin-right: 20px;
+	}
+	
+	#iconNav a {
+		height: 45px;
+		width: 45px;
+		display: block;
+		filter: grayscale(100%);
+	}
+	
+	#iconNav a:hover {
+		filter: grayscale(0%);
+	}
+	
+	#logoimg {
+		height: 300px;
+	}
+	
+	#profile{
+		max-height: 363px;
+		max-width: 400px;
+	}
