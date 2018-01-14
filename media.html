@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Portfolio</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/foundation.css">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
@@ -26,7 +27,7 @@
 	<div id="mainBody">
         <h1>Media</h1>
             <section id="contentArea" class="grid-x margin-x">
-            	<video class="media responsive small-12 medium-4 cell" id="Intro" controls muted>
+            	<!-- <video class="media responsive small-12 medium-4 cell" id="Intro" controls muted>
                 <source src="video/Intro.webm" type="video/webm">
                 </video>
                 <video class="media responsive small-12 medium-4 cell" id="Car-Commercial" controls muted>
@@ -34,30 +35,19 @@
                 </video>
                 <video class="media responsive small-12 medium-4 cell" id="Soccer-Video" controls muted>
                 <source src="video/Soccer-Video.webm" type="video/webm">
+                </video> -->
+                <video class="media responsive small-12 medium-4 cell" id="Intro" muted>
                 </video>
-          <div class="small-12 medium-4 cell">
-    		<div id="controls">
-    	  <div id="playVideo" class="player-button">Play</div>
-    	  </div>
-    	  </div>
-          <img src="images/Logo.jpg" class="small-12 medium-4 cell" id="logoimg">
-          
-          <!--adding a lightbox-->
-		  <section class="lightbox">
-
-		<!--close lightbox button-->
-		<button class="close-button close-lightbox"></button>
-
-		<!--large preview image-->
-		<video src="" alt="large preview image" class="lightbox-vid"></video>
-
-		<!--image description-->
-		<p class="img-desc">
-			placeholder copy
-		</p>
-
-	</section>
-         
+                <video class="media responsive small-12 medium-4 cell" id="Car-Commercial" muted>
+                </video>
+                <video class="media responsive small-12 medium-4 cell" id="Soccer-Video" muted>
+                </video>
+                <div class="small-12 medium-4 cell">
+                <div id="controls">
+                <div id="playVideo" class="player-button">Play</div>
+                </div>
+                </div>
+                <img src="images/Logo.jpg" class="small-12 medium-4 cell" id="logoimg">
             </section>
     	<a id="btt" class="float-center"><img src="images/btt.jpg"></a>
 	</div>
@@ -103,6 +93,20 @@
     	<p id="copyright">©2017-2018 Steven Cadick</p>
     </div>
 </footer>
+<!--adding a lightbox-->
+		  <section class="lightbox">
+
+		<!--close lightbox button-->
+		<i class="fa fa-close close-lightbox float-right"></i>
+
+		<!--large preview image-->
+		<video src="" alt="large preview image" class="lightbox-vid"></video>
+
+		<!--image description-->
+		<p class="img-desc">
+			placeholder copy
+		</p>
+        </section>
 <script src="js/main.js"></script>
 <!-- <script src="js/app.js"></script> -->
 <script src="js/media.js"></script>

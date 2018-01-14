@@ -44,38 +44,4 @@
  toggleButton.addEventListener("click", togglePlay, false);
  //toggleB.addEventListener("click", toggleP, false);
  
- var vids = document.querySelectorAll('.media'),
-      appliedClass;
-	   function popLightbox() {
-        //debugger;
-        window.scrollTo(0, 0);
-        document.body.style.overflow = "hidden";
-
-        // turn on the lightbox
-        let lightbox = document.querySelector('.lightbox');
-        lightbox.style.display = 'block';
-
-        //populate all the content on the page
-        let lightboxImg = lightbox.querySelector('video');
-        let lightboxClose = lightbox.querySelector('.close-lightbox');
-        let lightboxDesc = lightbox.querySelector('p');
-
-        lightboxImg.src = "video/" + this.id + ".webm";
-        lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
-
-        lightboxClose.addEventListener('click', closeLightbox, false);	
-      }
-
-      function closeLightbox() {
-        //debugger;
-		console.log('.media');
-		let lightbox = document.querySelector('.lightbox');
-		lightbox.style.display = "none";
-		document.body.style.overflow="visible";
-		
-		
-      }
- 		vids.forEach(function(element, index){
-			element.addEventListener("click", popLightbox, false);
-		});
 })();
