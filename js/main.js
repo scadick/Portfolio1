@@ -1,17 +1,17 @@
 // JavaScript Document
 (function () {
     "use strict";
-	
+
  var top = document.querySelector("#btt");
  function backTop() {
   scroll = 0;
   window.scrollTo(0, 0);
-	
+
  }
-	
+
   top.addEventListener("click", backTop, false);
 
-  var media, demoreel, toggleButton, toggleB;	
+  var media, demoreel, toggleButton, toggleB;
 
   //function init() {
   media = document.querySelector("#demoVid");
@@ -43,7 +43,7 @@
 
  toggleButton.addEventListener("click", togglePlay, false);
  //toggleB.addEventListener("click", toggleP, false);
- 
+
  var vids = document.querySelectorAll('.media'),
       appliedClass;
 	   function popLightbox() {
@@ -61,9 +61,9 @@
         let lightboxDesc = lightbox.querySelector('p');
 
         lightboxImg.src = "video/" + this.id + ".webm";
-        lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+        lightboxDesc.innerHTML = this.dataset.description;
 
-        lightboxClose.addEventListener('click', closeLightbox, false);	
+        lightboxClose.addEventListener('click', closeLightbox, false);
       }
 
       function closeLightbox() {
@@ -72,8 +72,8 @@
 		let lightbox = document.querySelector('.lightbox');
 		lightbox.style.display = "none";
 		document.body.style.overflow="visible";
-		
-		
+
+
       }
  		vids.forEach(function(element, index){
 			element.addEventListener("click", popLightbox, false);

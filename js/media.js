@@ -56,8 +56,9 @@
 			source.src= "video/" + data[index].video_name + ".mp4";
 			vid.appendChild(source);
 
-        // add an index number to the thumbnail for array reference
-        vid.dataset.index = index;
+      // add an index number to the thumbnail for array reference
+      vid.dataset.index = index;
+			vid.dataset.description = data[index].video_description;
 
         // add some event handling
         vid.addEventListener('click', popLightbox(index), false);
